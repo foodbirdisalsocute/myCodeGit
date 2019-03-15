@@ -1,0 +1,57 @@
+<view class="section">
+  <view class='localCity'>深圳</view>
+  <view class='searchItem'>
+    <image src='../../image/search.png' />
+    <input  bindtouchstart="bindInput" placeholder='请输入目的地'></input>
+  </view>
+</view>
+
+<view wx:for="{{parkArray}}">
+
+<!--横杠-->
+<view class="lineColor"></view>
+<!--图片div-->
+  <view class="map_text" hidden='{{false}}'>
+      <!--图片div-->
+      <view class="map_text_in">
+
+          <!--图片div-->
+          <view class='parkImg'>
+              <image mode="scaleToFill" src="{{item.imgPath}}"></image>
+          </view>
+
+          <view class='parkInfo'>
+            <view class='parkNameAndIcon'>
+              <view class="parkName-name"><text class='address-text'>{{item.parkName}}</text></view>
+              <view class="parkName-Icon"><image src="../../image/navigation_icon.png" bindtap="getRoute"></image></view>
+            </view>
+            <view class='addressAndDis'>
+              <view class='localIcon'><image mode="scaleToFill" src='/image/map_icon.png'></image></view>
+              <view class="address">{{item.address}}</view>
+              <view class="distance">{{item.distance}}</view>
+            </view>
+            <view class='useInfo'>
+              <text class="payInfo"><text class="Money">{{item.pay}}</text> \t元/小时</text>
+              <text class="useAble"><text class="vacancy">{{item.vacancy}}</text>\t个空位</text>
+              
+            </view>
+          </view>
+      
+      </view>
+
+
+
+
+
+      
+  </view>
+</view>
+
+<!--
+<view class="section">
+  <input bindinput="bindInput" placeholder="搜索" focus="true" />
+</view>
+<view bindtouchstart="bindSearch" data-keywords="{{item.name}}" class="text_box" wx:for="{{tips}}" wx:key="key">
+  {{item.name}}停车场
+</view>
+-->

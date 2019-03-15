@@ -1,0 +1,29 @@
+<image class='img' src='../../image/particulars_park_img.png'></image>
+<view class='park-total'>
+  <view class='location'>
+    <image src='../../image/navigation_icon.png'></image>
+    <view class='parking'>交通银行大厦-停车场</view>
+    <view class='price'>
+      <text class='money'>5</text>
+      <text class='describe'>元/小时</text>
+      <text class='number'>9</text>
+      <text class='describe'>空位</text>
+    </view>
+    <view class='map-info'>
+      <image class='map-icon' src='../../image/map_icon.png'></image>
+      <text class='map-detail'>福田区华强路交通银行大厦地下2层</text>
+      <text class='distance'>1.2km</text>
+    </view>
+  </view>
+</view>
+<view class='summary'>
+  <view>
+    <text class='item-key'>总车位数</text>
+    <text class='item-value'>200</text>
+  </view>
+  <view>
+    <text class='item-key'>营业时间</text>
+    <text class='item-value'>00:00-24:00</text>
+  </view>
+</view>
+<!--<button bindtap="appointButtonClick" class="button-appoinment">立即使用</button>-->

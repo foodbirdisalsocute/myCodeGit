@@ -1,0 +1,95 @@
+
+
+.innerHorrizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+.innerVertical{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/*****************密码框*******************************************/
+.x_left_up{
+   position: absolute;
+  top:15vh;
+  left:10%;
+  width: 11vw;
+  height: 11vw;
+  background-color: #00000000;
+  z-index: 1100;
+}
+
+.alert_payment{
+  position: absolute;
+  top:15vh;
+  left:10%;
+  width: 80%;
+  height:40vh;
+  z-index: 1001;
+}
+
+.price{
+  position: absolute;
+  top:25vh;
+  left:32.5%;
+  width: 25%;
+  height:10vh;
+  z-index: 1100;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 75rpx;
+  font-weight: bold;
+}
+
+.price_sig{
+  font-size: 30rpx;
+  line-height:110rpx;
+}
+
+.iptbox{ 
+ 
+  width: 8vh;
+  height:8vh;
+  border:1rpx solid #ddd; 
+ border-radius: 4rpx; 
+  z-index: 1001;
+  font-size: 90rpx;
+  background-color: white;
+} 
+
+
+.ipt{ 
+  display: flex;
+  flex-direction: row;
+
+  position: absolute;
+  top:45vh;
+  left:15%;
+  width: 70%;
+  height:110rpx;
+  text-align: center;
+  z-index: 1001;
+} 
+
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  display: none;
+  z-index: 99;
+}
+
+.activeMask{
+  display: block;
+}
+

@@ -1,0 +1,16 @@
+<view class='order-list'>
+  <view class='location'>交通银行大厦-停车场</view>
+  <view class='time'>2019年03月09日 16:44:45</view>
+  <view class='settlement'>
+    <text class='payment'>￥23.5</text><text class='hour'>（6小时）</text>
+    <button class='appointment'>再次预约</button>
+  </view>
+</view>
+<view class='order-list'>
+  <view class='location'>交通银行大厦-停车场</view>
+  <view class='time'>2019年03月09日 16:44:45</view>
+  <view class='settlement'>
+    <text class='payment'>￥23.5</text><text class='hour'>（6小时）</text>
+    <button class='appointment'>再次预约</button>
+  </view>
+</view>

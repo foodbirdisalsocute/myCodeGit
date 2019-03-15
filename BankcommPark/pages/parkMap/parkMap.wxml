@@ -1,0 +1,56 @@
+<view class="section">
+  <view class='localCity'>深圳</view>
+  <view class='searchItem'>
+    <image bindtap='bindInput' src='../../image/search.png' />
+    <!-- <input  bindtouchstart="bindInput" placeholder='请输入目的地'></input> -->
+    <input bindtouchstart="bindInput" placeholder='请输入目的地'></input>
+  </view>
+  
+  <!--<input bindtouchstart="bindInput" placeholder="查找地点、公交、地铁" value="{{keywords}}" />-->
+</view>
+
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location="true" markers="{{markers}}"
+    bindmarkertap="makertap" controls="{{controls}}" bindcontroltap="clickcontrol" bindregionchange="mapchange"></map>
+    
+</view>
+
+
+
+<!--图片div-->
+<cover-view class="map_text" wx:if="{{textData.name}}" hidden='{{clickMark}}'>
+  <!--图片div-->
+  <cover-view class="map_text_in">
+    <!--图片div-->
+    <cover-view class='parkImg'>
+      <cover-image mode="scaleToFill" src="../../image/park_img1.png"  bindtap='orderNow'></cover-image>
+    </cover-view>
+
+    <cover-view class='parkInfo'>
+      <cover-view class='parkNameAndIcon'>
+      <cover-view class="parkName-name">
+        <cover-view class='address-text'  bindtap='orderNow'>{{textData.name}}            
+        </cover-view>
+      </cover-view>
+      <cover-view class="parkName-Icon">
+        <cover-image src="../../image/navigation_icon.png" bindtap="getRoute"></cover-image>
+      </cover-view>
+    </cover-view>
+    <cover-view class='addressAndDis'>
+      <cover-view class='localIcon'>
+        <cover-image mode="scaleToFill" src='../../image/map_icon.png'></cover-image>
+      </cover-view>
+      <cover-view class="address"  bindtap='orderNow'>{{textData.desc}}</cover-view>
+      <cover-view class="distance">{{distance}}</cover-view>
+    </cover-view>
+    <cover-view class='useInfo'>
+      <cover-view class="payInfo"><cover-view class="Money">5</cover-view> \t元/小时</cover-view>
+      <cover-view class="useAble"><cover-view class="vacancy">9</cover-view>\t个空位</cover-view>          
+    </cover-view>
+  </cover-view>
+</cover-view>
+    
+</cover-view>
+<!-- <view class="orderNow"><button bindtap='orderNow'><text>立即预约</text></button></view> -->
+
+

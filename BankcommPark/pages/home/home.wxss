@@ -1,0 +1,74 @@
+/* pages/home/home.wxss */
+page {
+  background-color: white;
+}
+
+.top-image {
+  height: 418rpx;
+  width: 100%;
+}
+.title {
+  display: flex;
+  position: absolute;
+  top: 30rpx;
+  justify-content: center;
+  width: 100%;
+}
+.title-text {
+  font-family: PingFangSC-Medium;
+  font-size: 37rpx;
+  color:white;
+  letter-spacing: 0;
+  align-self: center;
+}
+.user-image {
+  
+  z-index: 998;
+  margin-left: 11.2%;
+  width: 142rpx;
+  position: absolute;
+  top: 102rpx;
+  height: 142rpx;
+  
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  
+  color: #aaa;
+  position: absolute;
+   top: 260rpx;
+   height: 142rpx;
+  margin-left: 14%;
+   width: 142rpx; 
+}
+.hideButton{
+  
+  z-index: 999;
+  position: absolute;
+   top: 102rpx;
+   height: 142rpx;
+  margin-left: 11.2%;
+   width: 142rpx;
+   
+  border-radius: 50%;
+  opacity:0;
+}
+
+
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 700rpx;
+  margin-top: 100rpx;
+}
+.menu {
+  width: 68.3%;
+  height: 262rpx;
+  margin: auto;
+  flex-grow: 1;
+}
+.hideTxt{
+  opacity:0;
+}

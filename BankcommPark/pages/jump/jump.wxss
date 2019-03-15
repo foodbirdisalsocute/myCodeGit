@@ -1,0 +1,47 @@
+/* pages/jump/jump.wxss */
+
+.buttonStyleOut {
+    margin-top:30px;
+    width: 90%; 
+    background-color: #446DFE;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 43rpx;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.buttonStyleIn {
+    margin-top:30px;
+    width: 90%; 
+    background-color: pink;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 43rpx;
+    font-size: 14px;
+    font-weight: 600;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.picInfo{
+  z-index: 999;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

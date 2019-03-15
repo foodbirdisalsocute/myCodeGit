@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page_bd">
+  <image src="../../image/icon5@2x.png"></image>
+    <view class="title">支付成功</view>
+    <view class="price"><text class="price_sig">￥23.5</text>{{price}}</view>
+    <view class="finish" bindtap='jump'>完成</view>
+  </view>
+
+</view>

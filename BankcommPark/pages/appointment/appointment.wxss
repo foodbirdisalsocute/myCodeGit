@@ -1,0 +1,161 @@
+page {
+  background-color: rgb(250, 250, 250);
+}
+
+.img {
+  width: 100%;
+}
+.park-total {
+  padding: 2% 0%;
+  width: 100%;
+  background-color: white;
+}
+.location {
+  margin-left: 3%;
+  margin-top: 18rpx;
+}
+.parking {
+  padding-left: 0;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #333333;
+}
+.location >image{
+  height: 72rpx;
+  width: 72rpx;
+  float: right;
+  margin-right: 4%;
+  margin-top: 0;
+}
+.price {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999999;
+  margin-top: 15rpx;
+}
+.money {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #E94642;
+  letter-spacing: 0.71px;
+}
+.describe {
+  margin-left: 6rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999999;
+}
+.number {
+  margin-left: 20rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #3C90F9;
+}
+.map-info {
+  margin-top: 25rpx;
+  line-height: 20rpx;
+}
+.map-icon {
+  height: 24rpx;
+  width: 24rpx;
+}
+.map-detail {
+  margin-left: 0.5%;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+}
+.distance {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  float: right;
+  margin-right: 4%;
+}
+.detail {
+  background-color: #ffffff;
+  margin-top: 1.5%;
+  width: 100%;
+}
+.licence-text {
+  width: 18.7%;
+  height: 3.4%;
+  margin-left: 4%;
+  margin-top: 5%;
+  font-family: PingsFangSC-Medium;
+  font-size: 28rpx;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+}
+.start-time {
+  display:inline-block;
+  box-sizing: border-box;
+  height: 2.8%;
+  margin-top: 2.5%;
+  padding-left:4%;
+  font-size:26rpx;
+  color: #999999;
+  text-align: center;
+}
+.end-time {
+  display:inline-block;
+  box-sizing: border-box;
+  height: 2.8%;
+  padding-left: 32.8%;
+  font-size:26rpx;
+  color: #999999;
+}
+.detail input{
+  background: #F3F6FF;
+  padding: 5rpx;
+  display:inline-block;
+  width:44%;
+  height: 4.8%;
+  margin-left: 4%;
+  margin-top: 2%;
+  box-sizing: border-box;
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #333333;
+  text-align: left;
+}
+.summary {
+  background-color: white;
+  margin-top: 0rpx;
+}
+.item-key {
+  margin-left: 4%;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999999;
+}
+.item-value {
+  margin-left: 4%;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #333333;
+}
+.button-payment {
+  background-image: linear-gradient(-134deg, #3B90F8 0%, #4669FF 100%);
+  border-radius: 100rpx;
+  margin-top: 100rpx;
+  width: 92%;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+
+
+.noFeelPay{
+  color:#02BB00;
+  zoom: 80%;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}

@@ -1,0 +1,127 @@
+page {
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  margin-top: 1.5%;
+  background-color: white;
+  padding: 0;
+}
+.park-total {
+  padding: 2% 0%;
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.park-img {
+  height: 180rpx;
+  width: 180rpx;
+  
+}
+.location {
+  margin-left: 3%;
+  margin-top: 18rpx;
+}
+.parking {
+  padding-left: 0;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #333333;
+}
+.map-info {
+  margin-top: 15rpx;
+  line-height: 20rpx;
+}
+.map-icon {
+  height: 24rpx;
+  width: 24rpx;
+}
+.map-detail {
+  margin-left: 0.5%;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+}
+.price {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999999;
+  position: absolute;
+  bottom: 10rpx;
+}
+.money {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #E94642;
+  letter-spacing: 0.71px;
+}
+.describe {
+  margin-left: 6rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999999;
+}
+.number {
+  margin-left: 20rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #3C90F9;
+}
+.charge-total {
+  margin-top: 3%;
+  width: 100%;
+}
+.licence {
+  margin-left: 4%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #333333;
+  letter-spacing: 0;
+}
+.summary {
+  padding: 20rpx 0%;
+  border: 1rpx solid #E5E5E5;
+  display: flex;
+  flex-direction: column; 
+}
+.summary-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:10rpx 0;
+  padding-left: 4%;
+}
+.item-key {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999999;
+}
+.item-value {
+  margin-right: 4%;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999999;
+}
+.zongji {
+  padding: 20rpx 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.zongji-key {
+  font-family: PingFangSC-Medium;
+  font-size: 2r6px;
+  color: #333333;
+}
+.zongji-value {
+  font-family: DINMittelschriftStd;
+  font-size: 42rpx;
+  color: #E94642;
+  letter-spacing: 0;
+}

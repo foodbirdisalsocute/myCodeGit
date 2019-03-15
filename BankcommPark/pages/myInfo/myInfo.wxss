@@ -1,0 +1,36 @@
+/* pages/myInfo/myInfo.wxss */
+.buttonList{
+  height: 100%;
+}
+
+.buttonList button{
+    margin-top:30px;
+    width: 90%; 
+    background-color: #446DFE;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 43rpx;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

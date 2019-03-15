@@ -1,0 +1,53 @@
+/* pages/orderList/orderList.wxss */
+page {
+  background-color: rgb(250, 250, 250)
+}
+
+.order-list {
+  margin-top: 1.5%;
+  background-color: white;
+  padding: 0;
+}
+.location {
+  margin-left: 4%;
+  padding-top: 31rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #333333;
+}
+.time {
+  margin-left: 4%;
+  margin-top: 15rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+}
+.settlement {
+  padding-top:20rpx;
+  padding-left:4%;
+  padding-bottom:20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.payment {
+  font-family: DINMittelschriftStd;
+  font-size: 32rpx;
+  color: #E94642;
+  letter-spacing: 0;
+}
+.hour {
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #999999;
+}
+.appointment {
+  border-radius: 50rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #333333;
+  border:1px solid #eee;
+  background-color: white;
+  float:right;
+  margin-right:4%;
+}

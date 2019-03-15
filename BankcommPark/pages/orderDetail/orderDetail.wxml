@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='park-total'>
+    <image class='park-img' mode="aspectFit" src='../../image/park_img1.png'></image>
+    <view class='location'>
+      <view class='parking'>交通银行大厦-停车场</view>
+      <view class='map-info'>
+        <image class='map-icon' src='../../image/map_icon.png'></image>
+        <text class='map-detail'>福田区华强路交通银行大厦地下2层 1.2km </text>
+      </view>
+      <view class='price'>
+        <text class='money'>5</text>
+        <text class='describe'>元/小时</text>
+        <text class='number'>9</text>
+        <text class='describe'>空位</text>
+      </view>
+    </view>
+  </view>
+  <view class='charge-total'>
+    <view class='licence'>粤B23579</view>
+    <view class='summary'>
+      <view class='summary-item'>
+        <text class='item-key'>车位</text><text class='item-value'>C区234</text>
+      </view>
+      <view class='summary-item'>
+        <text class='item-key'>入场时间</text><text class='item-value'>2019-03-09 15：26</text>
+      </view>
+      <view class='summary-item'>
+        <text class='item-key'>出场时间</text><text class='item-value'>2019-03-09 15：26</text>
+      </view>
+      <view class='summary-item'>
+        <text class='item-key'>用时</text><text class='item-value'>0小时00分钟</text>
+      </view>
+    </view>
+    <view class='zongji'>
+      <text class='zongji-key'>总计</text><text class='zongji-value'>￥ 23.5</text>
+    </view>  
+  </view>
+</view>

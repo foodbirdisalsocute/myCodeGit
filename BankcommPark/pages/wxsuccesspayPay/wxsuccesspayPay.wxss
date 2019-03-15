@@ -1,0 +1,69 @@
+.innerHorrizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+.innerVertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.pagebd{
+  
+}
+
+
+/*****************支付成功*******************************************/
+image{
+  position: absolute;
+  top:6vh;
+  left:44vw;
+  width:12vw;
+  height:80rpx;
+}
+
+.title{
+  position: absolute;
+  top:14vh;
+  left:42vw;
+  width: 100vw;
+  height:32rpx;
+  font-size:30rpx;
+  color:#3FC60C;
+}
+
+.price{
+  position: absolute;
+  top:31vh;
+  left:35vw;
+  width: 30vw;
+  height:66rpx;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 86rpx;
+  font-weight: bold;
+}
+
+.price_sig{
+  font-size: 50rpx;
+  line-height:110rpx;
+}
+
+.finish{
+  position: absolute;
+  bottom: 13vh;
+  left:28vw;
+  width: 43vw;
+  height:64rpx;
+  border:2rpx solid #3FC60C;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#3FC60C;
+
+}

@@ -1,0 +1,126 @@
+/**index.wxss**/
+page {
+  background-color: rgb(250, 250, 250);
+}
+.container {
+  padding: 0 0;
+}
+.detail {
+  background-color: #ffffff;
+  margin-top: 1.5%;
+  width: 100%;
+  height: 370rpx;
+}
+.licence-text {
+  width: 18.7%;
+  height: 3.4%;
+  margin-left: 4%;
+  margin-top: 30rpx;
+  font-family: PingsFangSC-Medium;
+  font-size: 28rpx;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+}
+.start-time {
+  display:inline-block;
+  box-sizing: border-box;
+  height: 2.8%;
+  margin-top: 30rpx;
+  padding-left:4%;
+  font-size:26rpx;
+  color: #999999;
+  text-align: center;
+}
+.end-time {
+  display:inline-block;
+  box-sizing: border-box;
+  height: 2.8%;
+  padding-left: 32.8%;
+  font-size:26rpx;
+  color: #999999;
+}
+.detail input{
+  background: #F3F6FF;
+  padding: 5rpx;
+  display:inline-block;
+  width:44%;
+  height: 4.8%;
+  margin-left: 4%;
+  margin-top: 2%;
+  box-sizing: border-box;
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #333333;
+  text-align: left;
+}
+.calculation {
+  margin-left: 4%;
+  margin-top: 5%;
+  border: 1px solid #4373FD;
+  border-radius: 4px;
+  width: 92%;
+  padding-bottom: 3%;
+}
+.zongji {
+  padding-left: 1.5%;
+  font-size: 28rpx;
+}
+.gongyong {
+  padding-left: 28%;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #333333; 
+}
+.gongji {
+  padding-bottom: 3%;
+  padding-left: 2.8%;
+  color: #e01515
+}
+
+.payment {
+  background-color: #ffffff;
+  display:block;
+  margin-top: 1.5%;
+  height: 22.5%;
+  width: 100%;
+}
+.payment-title {
+  height: 85rpx;
+  line-height: 85rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #999999;
+  letter-spacing: 0;
+  border-bottom: 1rpx solid #E5E5E5;
+  margin-left: 4%;
+}
+.payment-detail {
+  height: 142rpx;
+  line-height: 142rpx;
+}
+.weixin-image {
+  margin-left: 4%;
+  margin-top: auto;
+  vertical-align:middle;
+  height: 56rpx;
+  width: 56rpx;
+}
+.weixin-text {
+  margin-left: 3%;
+  margin-top: auto;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+}
+.button-payment {
+  background-image: linear-gradient(-134deg, #3B90F8 0%, #4669FF 100%);
+  border-radius: 100rpx;
+  margin-top: 40%;
+  width: 92%;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}

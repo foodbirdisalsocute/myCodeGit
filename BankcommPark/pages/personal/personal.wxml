@@ -1,0 +1,72 @@
+<!--pages/personal/personal.wxml--> 
+<view>
+  <image mode='aspectFit' src='../../image/bg2.png' class='top-image'></image>
+  <view class='title'>
+    <view class='title-text'>个人中心</view>
+  </view>
+  <image mode='aspectFit' src='../../image/Back1@2x.png' class='back' bindtap='back'></image>
+  <view wx:if="{{!hasUserInfo && canIUse}}">
+    <view class='user'>
+      <image mode='aspectFit' src='../../image/tx.png' class='user-image'></image>
+    </view>
+    <view class='describe'>
+      <view class='describe-text'>停车服务</view>
+    </view>
+    <view class='licence'>
+      <view class='licence-text'>0000394397902230</view>
+    </view>
+  </view>
+  <block wx:else>
+    <view class='user'>
+        <image mode='aspectFit' src='{{userInfo.avatarUrl}}' class='user-image'></image>
+    </view>
+    <view class='describe'>
+        <view class='describe-text'>{{userInfo.nickName}}</view>
+    </view>
+    <view class='licence'>
+      <view class='licence-text'>0000394397902230</view>
+    </view>
+  </block>
+</view>
+
+<view class='menu'>
+  <view class='item' >
+    <view class='item-key' bindtap='myCarInfo'>
+      <image class='item-key-image' mode='aspectFit' src='../../image/icon6@2x.png'></image>
+      <text class='item-key-text'>我的车辆</text>
+    </view>
+    <block wx:if="{{boundCarNoStat==true}}">
+      <view class='item-value'>{{carNo}}</view>
+    </block>
+    <block wx:else>
+       <view class='item-value'>未设置车牌</view>
+    </block>  
+  </view>  
+  <view class='item'>
+    <view class='item-key' bindtap='clickCarPosition'>
+      <image class='item-key-image' mode='aspectFit' src='../../image/icon3.png'></image>
+      <text class='item-key-text'>我的车位</text>
+    </view>
+    <view class='item-value' bindtap='clickCarPosition'>点击查看详情</view>
+  </view>
+  <view class='item'>
+    <view class='item-key' bindtap="checkNoPasswdPay" >
+      <image class='item-key-image' mode='aspectFit' src='../../image/icon5@2x.png'></image>
+      <text class='item-key-text'>免密支付</text>
+    </view>
+    <block wx:if="{{boundNoPasswdPayStat==true}}">
+     <view class='item-value' bindtap="checkNoPasswdPay" >已开通</view>
+    </block>
+    <block wx:else>
+      <view class='item-value' bindtap="checkNoPasswdPay" >未开通</view>
+    </block>
+  </view>
+  <view class='item'>
+    <view class='item-key'>
+      <image class='item-key-image' mode='aspectFit' src='../../image/icon2.png'></image>
+      <text class='item-key-text' bindtap="oderList">交易记录</text>
+    </view>
+    <view class='item-value' bindtap="oderList">点击查看详情</view>
+  </view>
+</view>
+

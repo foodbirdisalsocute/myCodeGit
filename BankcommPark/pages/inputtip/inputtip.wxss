@@ -1,0 +1,202 @@
+.section{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  
+}
+.localCity{
+  width: 20%;
+  display: flex;
+  font-weight: 600;
+  
+  align-items: center;
+   justify-content:center;
+}
+.searchItem{
+   display: flex;
+    background: #fff;
+    flex-direction: row;
+  width:75%;
+  /*margin:5px auto;*/
+  border:1px solid #c3c3c3;
+  height:30px;
+  border-radius: 120px;
+  
+    background-color: #F2F2F2;
+ /* padding: 0 5px;*/
+}
+.searchItem input {
+  margin-top: 1px;
+   border-radius: 120px;
+
+    font-size: 35rpx;
+    background-color: #F2F2F2;
+}
+.searchItem image {
+    height: 42rpx;
+    width: 42rpx;
+    align-self: center;
+    margin-left: 10rpx;
+    margin-right: 20rpx;
+}
+
+
+
+
+.map_text{
+  
+  border-radius: 30rpx;
+ 
+
+  margin-left: 8%;
+    margin-right: 8%;
+
+  bottom: 30rpx;
+  height: 100px;
+ 
+  z-index: 999;
+  margin-top: 5%;
+  
+}
+.map_text_in{
+ 
+  
+  border-radius: 20rpx;
+  height: 100%;
+  margin:auto;
+  flex-direction: row;
+  
+  display: flex;
+}
+
+.parkImg{
+  width: 40%;
+  border-radius: 20rpx;
+  
+}
+.parkImg image{
+  width: 100%;
+  height: 100%;
+
+}
+
+.parkInfo{
+  border-radius: 20rpx;
+  width: 100%;
+ 
+}
+
+.parkNameAndIcon{
+  display: flex;
+   flex-direction: row;
+  border-radius: 20rpx;
+  height: 35%;
+  
+}
+.parkName-name{
+  
+ 
+  width: 80%;
+   font-size:13px;
+   font-weight: 600;
+   flex-direction: column;
+ 
+  display: flex;
+   justify-content:center;
+  align-items: center;
+  
+  overflow: hidden;
+}
+.parkName-Icon{
+  border-radius: 20rpx;
+  width: 25%;
+  
+}
+.parkName-Icon image{
+  width:100%;
+  height: 100%
+}
+.addressAndDis{
+   display: flex;
+   flex-direction: row;
+   height: 21%;
+  
+}
+.addressAndDis  image{
+  width: 80%;
+  height: 80%;
+}
+.localIcon{
+   display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 13%;
+  
+}
+.address{
+  align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 180px;
+   font-size:12px;
+ 
+  color: #999999;
+}
+
+.distance{
+  align-items: center;
+    margin-left: 10px;
+    
+    
+    width: 30px;
+   font-size:12px;
+  background: white;
+  color: #999999;
+}
+
+.useInfo{
+  display: flex;
+  flex-direction: row;
+  border-radius: 20rpx;
+   height: 40%;
+ 
+}
+.payInfo{
+  
+  width: 45%;
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-start;
+  font-size:12px;
+  color: #999999;
+}
+.Money{
+  margin-left: 5px;
+  font-size:14px;
+  color: red;
+  font-weight: 600;
+}
+.vacancy{
+    margin-left: 5px;
+  font-size:14px;
+  color: blue;
+  font-weight: 600;
+}
+.useAble{
+ 
+  width: 45%;
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-start;
+  font-size:12px; 
+  color: #999999;
+}
+
+
+.lineColor{
+  margin-top: 20px;
+  background-color: #F2F2F2;
+  height: 15px;
+}

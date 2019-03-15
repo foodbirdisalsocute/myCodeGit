@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="detail">
+    <view class="licence-text">{{carNo}}</view>
+    <view>
+      <text class="start-time">入场时间</text>
+      <text class="end-time">已停时间</text>
+    </view>
+    <input value='2019-03-07 14:45' />
+    <input value='2019-03-07 14:45' />
+    <view class="calculation">
+      <text class="zongji">总计</text>
+      <text class="gongyong">共用{{time.hours}}小时{{time.minutes}}分钟, 共计:</text>
+      <text class="gongji">{{money}}元</text>
+    </view>
+  </view>
+  <view class="payment">
+      <view class='payment-title'>支付方式</view>
+      <view class='payment-detail'>
+        <image class="weixin-image" mode="aspectFit" src="../../image/weixin.png"></image>
+        <text class='weixin-text'>微信支付</text>
+      </view>
+  </view>
+  <button bindtap="payFinalButtonClick" class="button-payment">立即支付</button>  
+   
+</view>

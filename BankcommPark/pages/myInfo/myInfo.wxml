@@ -1,0 +1,44 @@
+<!--pages/myInfo/myInfo.wxml-->
+ 
+  <view class="userinfo">
+   
+
+
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+
+<view class='buttonList'>
+<button bindtap="checkNoPasswdPay" >
+免密支付
+<block wx:if="{{boundNoPasswdPayStat==true}}">
+    <view class="bg_black">已开通</view>
+</block>
+<block wx:else>
+    <view class="bg_red">未开通</view>
+</block>
+</button>
+
+
+      
+
+<button bindtap="oderList" >交易记录</button>
+<button bindtap='myCarInfo'>
+我的车辆
+<block wx:if="{{boundCarNoStat==true}}">
+    <view class="bg_black">{{carNo}}</view>
+</block>
+<block wx:else>
+    <view class="bg_red">暂时未绑定</view>
+</block>
+</button>
+
+
+-------------------------------------------
+<button>发票管理</button>
+<button>我的车位</button>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<view>
+  <image mode="aspectFit" src="../../image/bg1.png" class="top-image"/>
+  <view class='title'>
+    <view class='title-text'>停车服务</view>
+  </view>
+
+  
+ 
+
+ <view wx:if="{{!hasUserInfo && canIUse}}">
+ <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="hideButton">hideButton</button>
+  <image mode='aspectFit' src="../../image/tx.png" class='user-image'></image>
+ </view>
+<block wx:else>
+<view class="hideTxt">{{userInfo.avatarUrl}}</view>
+     <image mode='aspectFit' src="{{userInfo.avatarUrl}}" class='user-image' bindtap='bindViewTap'></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+</block>
+
+
+
+</view>
+<view class='option'>
+  <image mode="aspectFit" src="../../image/2.png"  bindtap='outUse' class="menu"> </image>
+  <image mode="aspectFit" src="../../image/1.png"  bindtap='clickcontrol' class="menu"> </image>
+</view>

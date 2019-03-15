@@ -1,0 +1,24 @@
+<view class="page" >
+  <view class="page_bd">
+
+    
+    <image src="../../image/wx_alert_pay.jpg"  class='alert_payment' catchtap='focusOn'></image>
+    <view class="x_left_up" catchtap='close'></view>
+    <view class="price" wx-if="{{showPwdInput}}" bindtap='focusOn'><text class="price_sig">￥23.5</text>{{price}}</view>
+    <view class='ipt' wx-if="{{showPwdInput}}" bindtap='focusOn'>
+        <input class='iptbox' value="{{inputValue.length>=1?inputValue[0]:''}}" disabled password='true'></input>
+        <input class='iptbox' value="{{inputValue.length>=2?inputValue[1]:''}}" disabled password='true'></input>
+        <input class='iptbox' value="{{inputValue.length>=3?inputValue[2]:''}}" disabled password='true'></input>
+        <input class='iptbox' value="{{inputValue.length>=4?inputValue[3]:''}}" disabled password='true'></input>
+        <input class='iptbox' value="{{inputValue.length>=5?inputValue[4]:''}}" disabled password='true'></input>
+        <input class='iptbox' value="{{inputValue.length>=6?inputValue[5]:''}}" disabled password='true'></input>
+
+    </view>
+    <input type="number" password="true" maxlength="6"  focus="{{isFocus}}" bindinput="inputPasswd" style='width:0;height:0;'></input>
+    
+
+  </view>
+</view>
+
+<!--遮罩层-->
+<view class="mask {{ isFocus ? 'activeMask' : '' }}" catchtap='focusOn'></view>
