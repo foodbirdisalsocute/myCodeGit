@@ -1,0 +1,130 @@
+.welcome{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 23px;
+   font-weight: 600;
+  height: 40px;
+ 
+}
+.sercuritySet{
+  height: 30px;
+  width: 100px;
+  font-size: 17px;
+   font-weight: 500;
+  border: 1px solid #7D7D7D;
+  right: 5%;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.welcomeContain{
+  color: #7D7D7D;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 16px;
+  margin-top: 10px;
+  height: 40px;
+}
+.lineImg{
+  width: 100%;
+  height: 25px;
+}
+.lineImg image{
+  width: 100%;
+  height: 100%;
+}
+
+.imgLi{
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  margin-left:5%;
+  height: 90px;
+}
+.imgLi image{
+  margin: auto;
+  width: 90px;
+  height: 90px;
+}
+.l1-2{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.bigLine{
+  background-color:  #EBEBEB;
+  margin-top: 20px;
+  height: 10px;
+}
+
+.accountSurplus{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.accountTitle{
+  font-size: 23px;
+  font-weight: 600;
+}
+.accountMoney{
+  margin-top: 10px;
+  font-size: 17px;
+  color: red;
+}
+.lastIno{
+   margin-top: 10px;
+  font-size: 14px;
+  color: #7D7D7D;
+}
+
+.line{
+  background-color:  #EBEBEB;
+  margin-top: 20px;
+  height: 1px;
+}
+
+.accountDetail{
+  color: #64B5A4;
+  margin-top: 15px;
+}
+.logoRight{
+  position: absolute;
+  right: 20px;
+  color: #7D7D7D
+}
+
+.quickLink{
+  
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.containTwo{
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  
+}
+.rowLine{
+   border:1rpx solid #7D7D7D;
+    
+    height: 20px;
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-top: 18px;
+   
+}
+.rowLine-1{
+   border:1rpx solid #7D7D7D;
+    
+    height: 20px;
+     margin-left: 30px;
+     margin-right: 50px;
+     margin-top: 18px;
+   
+}

@@ -1,0 +1,9 @@
+<!--pages/verifyFail/verifyFail.wxml-->
+<!--pages/houseMoney/houseMoney.wxml-->
+<view class="verifyImg">
+<image src="../../image/faceNoMatch.png" mode='scaleToFill'></image>
+</view>
+
+
+<view class="wetChatPayVerify"  bindtap='checkId' >微信支付密码登录</view>
+<view class="faceVerify"  bindtap='toCheckId' >继续人脸识别登录</view>

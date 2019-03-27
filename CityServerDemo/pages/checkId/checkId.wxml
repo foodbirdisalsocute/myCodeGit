@@ -1,0 +1,36 @@
+<!--pages/checkId/checkId.wxml-->
+<!--pages/houseMoney/houseMoney.wxml-->
+<view class="checkImg">
+<image src="../../image/takePhoto.png" mode='scaleToFill'></image>
+</view>
+<view class="checkIdContain">
+<view class="nameAndIdCard"><text>姓名</text></view>
+ <input placeholder="请输入" bindtap='focusName'  bindinput="getInputName"   class='inputNameAndIdCard' value='{{nameShow}}'/>
+ <view class="line"></view>
+ <view class="nameAndIdCard"><text>身份证</text></view>
+ <input placeholder="请输入" bindtap='focusIdCard' bindinput="getInputIdCard"  class='inputNameAndIdCard' value='{{idCardShow}}'/>
+  <view class="line"></view>
+
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" >
+        <radio value="" value="fgVerify" checked="true"/>反光识别
+    </label>
+    <view class="rowLine"></view>
+    <label class="radio" >
+        <radio value="" value="dsVerify"  checked=""/>读数识别
+    </label>
+</radio-group>
+ <view class="line"></view>
+<view class="checkBoxView">
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox">
+    <checkbox checked='{{selected}}'/>
+    我同意交通银行使用我所提交的信息用于快捷登录
+  </label>
+</checkbox-group>
+</view>
+
+<view class="beginCheck" style="background:{{viewBg}};" bindtap='checkId' >开始验证</view>
+
+
+</view>

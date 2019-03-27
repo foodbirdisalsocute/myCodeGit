@@ -1,0 +1,89 @@
+/* pages/houseMoney/houseMoney.wxss */
+.houseImg{
+  width: 90%;
+  border-radius: 15rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 250px;
+  background: rebeccapurple
+}
+.houseImg image{
+  border-radius: 15rpx;
+  height: 100%;
+  width: 100%;
+}
+.showName{
+  
+  background-color: #B64855;
+  height: 70rpx;
+  width: 200rpx;
+  position: absolute;
+  left: 8%;
+  top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.moneyInfo{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-weight: 590;
+  font-size: 16px;
+}
+.personMoney-1{
+  margin-left: 20px;
+
+}
+.lastPay-1{
+  margin-right: 20px;
+}
+.rowLine{
+   border:1rpx solid #F7F7F7;
+    margin: auto;
+    height: 40px;
+}
+.line{
+  border:1rpx solid #F7F7F7;
+  margin-top: 10px;
+}
+
+.money-1{
+  color: red;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: absolute;
+}
+.money-2{
+  color: red;
+  margin-right: 20px;
+    margin-top: 10px;
+  position: absolute;
+}
+
+.accountDetail{
+  margin-top: 50px;
+  font-size: 22px;
+  width: 100%;
+}
+.getMoney{
+    font-size: 22px;
+  margin-top: 20px;
+}
+.toMoneyRoom{
+    font-size: 22px;
+  margin-top: 20px;
+}
+.logoRight{
+  position: absolute;
+  right: 20px;
+  color: #EBEBEB
+}
+.getPhoneButtom{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%; 
+  opacity:0;
+}

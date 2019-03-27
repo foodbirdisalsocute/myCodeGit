@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/temp/temp",
+    "pages/MoneyRoom/MoneyRoom",
+    "pages/houseMoney/houseMoney",
+    "pages/checkId/checkId",
+    "pages/verifyFail/verifyFail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

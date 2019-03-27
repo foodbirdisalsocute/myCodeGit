@@ -1,0 +1,32 @@
+<!--pages/houseMoney/houseMoney.wxml-->
+<view class="houseImg" hidden='{{logining}}'>
+<image src="../../image/houseMoneyHome.png" mode='scaleToFill'></image>
+</view>
+
+<view class="houseImg" hidden='{{!logining}}'>
+<view class="showName">{{name}}</view>
+<image src="../../image/houseMoneyShow.png" mode='scaleToFill'></image>
+
+<view class="moneyInfo" bindchange="radioChange">
+     <label class="personMoney" >
+        <view class='personMoney-1'>个人账户余额</view>
+        <view class='money-1'>￥99999.0</view>
+    </label>
+    <view class="rowLine"></view>
+    <label class="lastPay" >
+        <view class="lastPay-1">末次缴存余额</view>
+        <view class='money-2'>￥99999.0</view>
+    </label>
+</view>
+
+<view class="accountDetail">账户明细<text class='logoRight'>></text></view>
+ <view class="line"></view>
+<view class='getMoney'>提取公积金<text class='logoRight'>></text></view>
+
+ <view class="line"></view>
+<view class="toMoneyRoom" bindtap='goMoneyRoom'>前往公积金业务大厅<text class='logoRight'>></text></view>
+ <view class="line"></view>
+</view>
+
+<button  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"
+  hidden="{{!hiddenButtom}}" class='getPhoneButtom'>hhh</button>  

@@ -1,0 +1,81 @@
+<!--pages/home/home.wxml-->
+<view class="homeContain">
+
+<view class="cityPicView">
+
+  <image src='../../image/SZcity.png' mode='scaleToFill'></image>
+  <view class="location">深圳市</view>
+  
+  <view class="weather">
+    <image src='../../image/cloud1.png'></image>
+    <text>23C良</text>
+  </view>
+
+<view class='loginView'>
+  <view class="logInfo">
+  <image  mode='scaleToFill' class="userinfo-avatar" src="../../image/tx.png" ></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="hideButton"> 获取头像昵称 </button>
+    <view wx:else>
+      <image bindtap="bindViewTap" mode='scaleToFill' class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view wx:if="{{logining==false}}" class='pleaseLogin' bindtap='goLogin'>请登录</view>
+    
+   
+  </view>
+   <view wx:if="{{logining==true}}" class='goRight' >></view>
+</view>
+
+<view class="myCard">我的证件</view>
+
+<swiper class="swiper" next-margin="80rpx" current-item-id="{{currentItemId}}" previous-margin="80rpx" bindchange="swiperChange"  indicator-dots="{{true}}">  
+  <block wx:for="{{backClass}}" wx:key="index">
+
+    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='toHouseMoney'>  
+     <view class='li'>
+      <view class='li1 {{currentItemId == index ? "selected" : ""}}' >
+         <image class="cardImg" src='../../image/{{item}}.png' mode='scaleToFill'></image>
+        
+      </view>
+     </view> 
+    </swiper-item>  
+
+  </block>
+</swiper> 
+<view class="myCard">最近使用</view>
+<scroll-view class='lastUse' scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block-->
+
+  <view wx:for="{{lastUseProject}}" wx:key="index" style="background: red; width: 90px; height: 90px; display: inline-block" >
+  <image src="../../image/{{item}}.png"></image>
+  </view>
+</scroll-view>
+
+</view>
+
+</view>
+<!--  -->
+<view class="server">服务</view>
+  <view class='allContain'>
+  <view class="serverTitle"><text>常用服务</text></view>
+    <view class='listContain'>
+      <view class='line'></view>
+      <view wx:for="{{normalProject}}" wx:key="index" class='oneContain'>
+        <view class="containTwo" id="{{item}}"bindtap='changeList'>
+          <view class='services'>
+          <image src="../../image/{{item}}.png" mode='scaleToFill'  ></image>
+          </view>
+          <view class='descript'>
+            <view class="serverName">{{normalProjectName[index]}}</view>
+            <view class="serverDetail">{{normalProjectDetail[index]}}</view>
+          </view>
+          <text class='logoRight'>></text>
+        </view>
+        <view wx:if="{{index!=5}}" class='line'></view>
+        <view wx:if="{{index==5}}" class='linehidden'></view>
+      </view>
+   </view>
+
+</view>
+<view class="bootView"><text>交通银行欢迎您</text></view>
+<view class='bootBlank'></view>

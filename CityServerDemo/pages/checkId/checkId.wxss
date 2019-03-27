@@ -1,0 +1,81 @@
+/* pages/houseMoney/houseMoney.wxss */
+.checkImg{
+  width: 80%;
+  border-radius: 15rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 200px;
+}
+.checkImg image{
+  border-radius: 15rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.checkIdContain{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 500px;
+  
+}
+.nameAndIdCard{
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+}
+.nameAndIdCard text{
+  font-size: 16px;
+}
+
+.inputNameAndIdCard{
+   border-radius: 15px;
+  width: 270px;
+  font-size: 20px;
+  /*
+  height:  1.1rem;
+  min-height: 1.1rem;
+  */
+}
+
+.line{
+  border:1rpx solid #F7F7F7;
+  margin-top: 7px;
+}
+.rowLine{
+   border:1rpx solid #F7F7F7;
+    margin-left: 20px;
+    height: 30px;
+     margin-right: 20px;
+    margin-top: 7px;
+}
+
+radio-group{
+  display: flex;
+  align-items: center;
+}
+ radio-group .radio{
+  margin-left: 20rpx;
+}
+ radio-group radio{
+  margin-left: 10rpx;
+}
+
+.checkBoxView{
+  margin-top: 10px;
+  transform:scale(.7)
+} 
+.checkBoxView label{
+  font-size: 18px;
+  color: #9D9D9D;
+}
+.beginCheck{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  height: 35px;
+
+    color: rgb(255, 255, 255);
+    font-size: 34rpx;
+}

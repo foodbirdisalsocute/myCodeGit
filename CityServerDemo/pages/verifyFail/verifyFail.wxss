@@ -1,0 +1,46 @@
+/* pages/houseMoney/houseMoney.wxss */
+.verifyImg{
+  width: 90%;
+  border-radius: 15rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 200px;
+  background: rebeccapurple
+}
+.verifyImg image{
+  border-radius: 15rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.wetChatPayVerify{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 34rpx;
+    background-color: #446DFE;
+}
+
+.faceVerify{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  height: 35px;
+    color: black;
+    font-size: 34rpx;
+    background-color: #FAFAFA;
+    border: 1px solid #EBEBEB;
+
+}

@@ -1,0 +1,48 @@
+<!--pages/MoneyRoom/MoneyRoom.wxml-->
+<view class="welcome">{{name}}，下午好 <view class="sercuritySet">安全设置</view>
+
+</view>
+<view class="welcomeContain">欢迎办理深圳公积金业务</view>
+<view class="lineImg">
+<image src='../../image/line.png' mode='scaleToFill'></image>
+</view>
+
+<view class='imgLi'>
+ <view class="l1-1">
+<image src='../../image/myInfo.png' mode='scaleToFill'></image>
+</view>
+<view class="l1-2">
+<image src='../../image/orderToDo.png' mode='scaleToFill'></image>
+</view>
+<view class="l1-3">
+<image src='../../image/getOrder.png' mode='scaleToFill'></image>
+</view> <!---->
+</view>
+
+ <view class="bigLine"></view>
+ 
+<view class='accountSurplus'>
+<text class="accountTitle"> 账户余额</text>
+<view class="accountMoney"> ￥9999999</view>
+<view class="lastIno"> 最近缴存 2019年2年26日 ￥1252.80</view>
+ <view class="line"></view>
+ <view class="accountDetail">账户明细<text class="logoRight">></text></view>
+ </view>
+  <view class="bigLine"></view>
+
+  
+<view class='quickLink'>
+
+<text class="accountTitle"> 快速链接</text>
+
+<view class='containTwo'>
+ <view class="accountDetail">月供计算器</view>
+    <view class="rowLine"></view>
+  <view class="accountDetail">缴费证明</view>
+</view>
+<view class='containTwo'>
+ <view class="accountDetail">贷款额度试算</view>
+    <view class="rowLine-1"></view>
+</view>
+
+ </view>
