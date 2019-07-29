@@ -1,0 +1,76 @@
+.calendar_title{width: 70%; margin: 10rpx auto;
+flex-direction: row;
+display: flex;
+font-size: 20pt;color: #fff;}
+.calendar_title .icon image{width: 60rpx; height: 60rpx;margin: 120rpx auto;}
+.showYandM{margin: 120rpx auto;}
+/* 日历 */
+.calendar{width: 100%;margin-top: 75rpx;background: #fff;border-bottom-right-radius: 20rpx;border-bottom-left-radius: 20rpx;padding: 0 0 20rpx;font-family: FZZhunYuan-M02S;}
+.header{font-size: 0;width: 80%;margin: 0 auto;}
+.header>view{display: inline-block;width: 14.285%;color: #666;font-size: 30rpx;text-align: center;border-bottom: 1px solid #D0D0D0;padding: 20rpx 0;}
+.weekMark{position: relative;width: 80%;margin: 0 auto;}
+.weekMark view{position: absolute;bottom: 0;left: 0;width: 100%;border-bottom: 2px solid #69f;}
+.date-box{font-size: 0;padding: 10rpx 0;width: 80%;margin: 0 auto;}
+.date-box>view{position: relative;display: inline-block;width: 14.285%;color: #666;text-align: center;vertical-align: middle;}
+.date-head{height: 60rpx;line-height: 60rpx;font-size: 12pt;}
+.nowDay .date-head{width: 60rpx;border-radius: 50%;text-align: center;color: #666;background-color: #ff9933;margin: 0 auto;}
+
+
+.imagesCover{
+  position: absolute;
+  z-index: -99;
+  height: 140px;
+  width: 100%;
+}
+.Manager{
+  position: absolute;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+  margin-left: 80%;
+  margin-top: 10px;
+}
+
+
+
+.choseDay{
+  width: 60rpx;border-radius: 50%;text-align: center;color: #666;background-color: #999;
+  margin: auto
+}
+.line{
+  border: 1px solid #EBEBEB;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.log{
+  border: 1px solid red;
+  margin-top: 5px;
+  width: 90%;
+  margin-left: 5%;
+  height: 120px;
+}
+
+.picAnd{
+  border: 1px solid rosybrown;
+  display: flex;
+  height: 40px;
+}
+
+.pic{
+  width: 40px;
+  height: 40px;
+
+  border-radius: 90rpx;
+  border: 1px solid #666;
+}
+
+.time{
+  border:1px solid #ff9933;
+  margin-left: 100px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+

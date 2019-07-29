@@ -1,0 +1,73 @@
+/* pages/addTeam/addTeam.wxss */
+.input{
+    padding-left: 10px;
+    height: 44px;
+    color: black;
+    text-align: center;
+  line-height: 200rpx;
+
+}
+
+.inputView{
+    border:  2px solid #EBEBEB;
+    margin-right: 15px;
+    margin-top: 15px;
+    
+   border-radius: 10rpx;
+   width: 90%;
+   margin-left: 5%;
+}
+
+.toCreate{
+   margin-right: 15rpx; 
+   margin-top: 50rpx;
+   border-radius: 10rpx;
+   width: 90%;
+   margin-left: 5%;
+  background-color: #8D9FF1;
+  color: white;
+}
+
+.teamImg{
+  width: 128px;
+  height: 128px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20%;
+     border-radius: 90px;
+}
+
+.teamImg image{
+  height: 128px;
+  width: 128px;
+  
+    border-radius: 90px;
+}
+
+.showTips{
+  width: 100%;
+}
+
+.imageView{
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+}
+
+.showWords1{
+  font-size: 30rpx;
+  color: #7B7B83;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+}
+
+.showWords2{
+  
+  margin-top: 30px;
+  font-size: 25rpx;
+  color: #7B7B83;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+}

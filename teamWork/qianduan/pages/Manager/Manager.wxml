@@ -1,0 +1,68 @@
+<view class="addWorkerLine">
+  <view class="teamWorker">
+  项目成员
+  </view>
+
+  <view class='ManagerTeam'>
+  管理
+  </view>
+
+</view>
+
+<!-- <view  class='teamContain'>
+  <view wx:for="{{teamInfo}}" wx:for-index="index" class='picAndName'>
+    <view class='pic'>
+       <image src="{{item.picPath}}"  mode='scaleToFill'></image>
+    </view>
+    <view class="teamName">胶布</view>
+  </view>
+</view> -->
+
+<view wx:for="{{teamInfoSize%eachLineSize==0?(teamInfoSize/eachLineSize):((teamInfoSize-teamInfoSize%eachLineSize)/eachLineSize+1)}}" wx:for-index="index" class='teamContain'>
+  <view wx:for="{{eachLineSize}}"  wx:for-index="j" >
+
+    <view wx:if="{{(index*eachLineSize+j)<teamInfoSize}}" class='picAndName'>
+      <view class='pic'>
+        <image src="{{teamInfo[index*eachLineSize+j].picPath}}"  mode='scaleToFill'></image>
+      </view>
+      <view class="teamName">{{teamInfo[index*eachLineSize+j].name}}</view>
+    </view>
+
+    <view wx:elif="{{(index*eachLineSize+j)==teamInfoSize}}" class='picAndName'>
+      <view class='pic'>
+        <image src="../../images/icon/accountAdd.png"  mode='scaleToFill'></image>
+        </view>
+        
+    </view>
+
+  </view>
+</view>
+
+<view class='bigLine'></view>
+
+<view class="projectDetail">项目名称<text class='rightDetail'>小一的项目</text><text class='logoRight'>></text></view>
+
+<view class="line"></view>
+<view class="projectDetail">我在项目中的昵称<text class='rightDetail'>小一</text><text class='logoRight'>></text></view>
+
+ <view class="line"></view>
+<view class="projectDetail">项目二维码<text class='rightDetail'>haha</text><text class='logoRight'>></text></view>
+
+ <view class="line"></view>
+ 
+
+<view class='bigLine'></view>
+
+<view class="projectDetail">项目信息通知设置<text class='logoRight'>></text></view>
+
+<view class="line"></view>
+<view class="projectDetail">项目权限设置<text class='logoRight'>></text></view>
+<view class='bigLine'></view>
+
+<view class="projectDetail">顶置项目<text class='logoRight'>></text></view>
+
+<view class="line"></view>
+<view class="projectDetail">开启每日反馈<text class='logoRight'>></text></view>
+
+<view class="deleteProjectTeam">解散项目</view>
+<view class='blankView'></view>

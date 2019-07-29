@@ -1,0 +1,45 @@
+{
+  "pages":[
+  "pages/index/index",
+    "pages/projectTeam/projectTeam",
+  
+    "pages/test/test",
+    "pages/registry/registry",
+   
+    "pages/getOpenId/getOpenId",
+    "pages/home/home",
+    "pages/Manager/Manager",
+    "pages/workLog/workLog",
+    "pages/logs/logs",
+    "pages/addTeam/addTeam"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#8D9FF1",
+    "navigationBarTitleText": "团队日志管理",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/projectTeam/projectTeam",
+        "text": "项目组"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "任务"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的"
+      }
+    ]
+  }
+}

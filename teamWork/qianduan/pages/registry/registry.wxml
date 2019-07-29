@@ -1,0 +1,40 @@
+<!--用户注册页面-->
+
+<view class="registryContainer">
+  <view class='picAndName'>
+      <view class='picContain'>
+        <view class='pic'>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        </view>
+      </view>
+      <view class='nameContain'>
+        <view class='name'>
+          <text class="userinfo-nickname">AA{{userInfo.nickName}}</text>
+        </view>
+      </view>
+      <view class='inputContain'>
+        <view class='inputView'>
+          <view class="inputItemTxt" >电话号码</view>
+          <input class='inputClass' bindinput='getPhone' value="13138165634"></input>
+        </view>
+      </view>
+      <view class='inputContain'>
+        <view class='inputView'>
+          <text class="inputItemTxt" >邮箱地址</text>
+          <input class='inputClass' bindinput='getMail' value="981536311@qq.com"></input>
+        </view>
+      </view>
+      <view class='inputContain'>
+        <view class='inputView'>
+          <text class="inputItemTxt">工牌号码</text>
+          <input class='inputClass'bindinput='getWorkNum' value="HQ20125"></input>
+        </view>
+      </view>
+  </view>
+<view class='registryButton' bindtap='registry'>
+
+注册
+</view>
+
+</view>
+

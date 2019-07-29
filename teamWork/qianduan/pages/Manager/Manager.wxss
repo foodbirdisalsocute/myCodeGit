@@ -1,0 +1,95 @@
+.addWorkerLine{
+  margin-top: 20px;
+  display: flex;
+  border: 1px solid rebeccapurple;
+  width: 94%;
+  margin-left: 3%;
+  height: 30px;
+}
+
+.teamWorker{
+  color: #ABAB83;
+  font-size: 20px;
+  width: 120px;
+}
+
+.ManagerTeam{
+  color: #8D9FF1;
+  font-size:20px;
+  margin-left: 50%;
+}
+
+.teamContain{
+  border: 1px solid yellowgreen;
+  display: flex;
+  width: 94%;
+  margin-left: 3%;
+  word-break:break-all;
+  margin-top: 30px;
+  
+}
+.pic{
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.pic image{
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 5px;
+}
+
+.picAndName{
+  border: 1px solid green;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-break:break-all;
+
+}
+
+.bigLine{
+  margin-top: 40PX;
+  width: 100%;
+  height: 20px;
+  background-color: #EBEBEB
+}
+
+.line{
+  border:1rpx solid #EBEBEB;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.projectDetail{
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 15px;
+  width: 100%;
+}
+.rightDetail{
+   position: absolute;
+  right: 40px;
+  color: #ABABAB
+}
+
+.logoRight{
+  position: absolute;
+  right: 15px;
+  color: #ABABAB
+}
+.deleteProjectTeam{
+  background-color: #E56B66;
+  width: 90%;
+  margin-left: 5%;
+  height: 40px;
+  margin-top: 30px;
+  display: flex;
+  font-size: 23px;
+  justify-content: center;
+  color: white;
+}
+.blankView{
+  height: 20px;
+}

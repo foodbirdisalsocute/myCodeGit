@@ -1,0 +1,54 @@
+<!-- 日历年月 -->
+<image class='Manager' src='/images/icon/Manage.png' mode='scaleToFill' bindtap='goManager'></image>
+
+<image class='imagesCover' src='/images/icon/dog.png' mode='scaleToFill' ></image>
+<view class='calendar_title flex_nowrap'>
+
+  <view class='icon' bindtap='lastMonth'>
+    <image src='/images/icon/28.png' />
+  </view>
+  <view class='showYandM'>{{year}}年{{month}}月</view>
+  <view class='icon' bindtap='nextMonth'>
+    <image src='/images/icon/29.png' />
+  </view>
+  
+</view>
+
+<!-- 日历主体 -->
+<view class='calendar'>
+  <view class='header'>
+    <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+      <view></view>
+    </view>
+  </view>
+
+  <view class='date-box'>
+    <block wx:for='{{dateArr}}' wx:key=''>
+    
+    
+     
+      <view class='{{isToday == item.isToday&&choseDay==-1 ? "nowDay" : ""}}'>
+         <view class='{{item.dateNum == choseDay ? "choseDay" : ""}}'>
+          <view class='date-head' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+            <view id="{{item.dateNum}}" bindtap='showWorkLogs'>{{item.dateNum}}</view>
+          </view>
+        </view>
+      </view>
+
+    </block>
+  </view>
+
+</view>
+
+
+<view class='line'> </view>
+
+<view wx:for="{{workLogs}}">
+<view class="log">
+<view class='picAnd'>
+<view class='pic'>头像</view> <view class="time">2019-5-5</view>
+</view>
+<view>日志</view>
+</view>
+</view>
+<view class="pic">123</view>

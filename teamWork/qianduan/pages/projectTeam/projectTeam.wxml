@@ -1,0 +1,8 @@
+<view class="container"></view>
+
+<view wx:for="{{projectNames}}">
+<view  class="showProjectTeam" id="{{item}}" bindtap='clickProject'>{{item}}</view>
+</view>
+
+
+<view class="addTeam" bindtap='addTeamClick'>+</view>

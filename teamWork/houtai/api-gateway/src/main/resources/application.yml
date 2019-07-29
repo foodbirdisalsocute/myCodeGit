@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    user-route: # user-route只是给路由一个名称，可以随便命名
+      url: http://localhost:8001/ #指定URL
+      path: /teamwork/**  # URL对应的路径
+
+#访问http://localhost:9999/actuator/routes 查看暴露的端口
+#访问http://localhost:9999/movie/client 可以可以访问

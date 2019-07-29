@@ -1,0 +1,30 @@
+<!--pages/addTeam/addTeam.wxml-->
+<view class='showTips'>
+
+<view class="imageView">
+<view class='teamImg'>
+<image src="../../images/icon/team.png"  mode='scaleToFill'> </image>
+</view>
+</view>
+
+
+
+<view class='showWords1'>
+<text>轻松查看团队日志</text>
+</view>
+
+
+<view class='showWords2'>
+<text>请给项目起一个名称吧</text>
+</view>
+
+
+</view>
+
+
+<!--style的优先级比class高会覆盖和class相同属性-->
+<view class="inputView">
+<input class="input"  placeholder="请输入项目名称" bindinput="listenerPhoneInput" />
+</view>
+
+<button class="toCreate"  bindtap="listenerLogin">开始创建</button>

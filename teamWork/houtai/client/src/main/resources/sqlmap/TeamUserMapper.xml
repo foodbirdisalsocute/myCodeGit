@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxy.client.mapper.TeamUserMapper">
+  <resultMap id="BaseResultMap" type="com.xxy.client.entity.TeamUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="wechat_name" jdbcType="VARCHAR" property="wechatName" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="mail" jdbcType="VARCHAR" property="mail" />
+    <result column="work_num" jdbcType="VARCHAR" property="workNum" />
+    <result column="wechat_open_id" jdbcType="VARCHAR" property="wechatOpenId" />
+    <result column="pic_path" jdbcType="VARCHAR" property="picPath" />
+    <result column="deleted_status" jdbcType="VARCHAR" property="deletedStatus" />
+    <result column="work_mail" jdbcType="VARCHAR" property="workMail" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, wechat_name, phone, mail, work_num, wechat_open_id, pic_path, deleted_status, 
+    work_mail
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from teamuser
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from teamuser
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.xxy.client.entity.TeamUser">
+    insert into teamuser (id, wechat_name, phone, 
+      mail, work_num, wechat_open_id, 
+      pic_path, deleted_status, work_mail
+      )
+    values (#{id,jdbcType=INTEGER}, #{wechatName,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{mail,jdbcType=VARCHAR}, #{workNum,jdbcType=VARCHAR}, #{wechatOpenId,jdbcType=VARCHAR}, 
+      #{picPath,jdbcType=VARCHAR}, #{deletedStatus,jdbcType=VARCHAR}, #{workMail,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxy.client.entity.TeamUser">
+    insert into teamuser
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="wechatName != null">
+        wechat_name,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="mail != null">
+        mail,
+      </if>
+      <if test="workNum != null">
+        work_num,
+      </if>
+      <if test="wechatOpenId != null">
+        wechat_open_id,
+      </if>
+      <if test="picPath != null">
+        pic_path,
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status,
+      </if>
+      <if test="workMail != null">
+        work_mail,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="wechatName != null">
+        #{wechatName,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="mail != null">
+        #{mail,jdbcType=VARCHAR},
+      </if>
+      <if test="workNum != null">
+        #{workNum,jdbcType=VARCHAR},
+      </if>
+      <if test="wechatOpenId != null">
+        #{wechatOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="picPath != null">
+        #{picPath,jdbcType=VARCHAR},
+      </if>
+      <if test="deletedStatus != null">
+        #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="workMail != null">
+        #{workMail,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xxy.client.entity.TeamUser">
+    update teamuser
+    <set>
+      <if test="wechatName != null">
+        wechat_name = #{wechatName,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="mail != null">
+        mail = #{mail,jdbcType=VARCHAR},
+      </if>
+      <if test="workNum != null">
+        work_num = #{workNum,jdbcType=VARCHAR},
+      </if>
+      <if test="wechatOpenId != null">
+        wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="picPath != null">
+        pic_path = #{picPath,jdbcType=VARCHAR},
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status = #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="workMail != null">
+        work_mail = #{workMail,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xxy.client.entity.TeamUser">
+    update teamuser
+    set wechat_name = #{wechatName,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      mail = #{mail,jdbcType=VARCHAR},
+      work_num = #{workNum,jdbcType=VARCHAR},
+      wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR},
+      pic_path = #{picPath,jdbcType=VARCHAR},
+      deleted_status = #{deletedStatus,jdbcType=VARCHAR},
+      work_mail = #{workMail,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <!--自定义函数从此处开始-->
+  <select id="findOneByWechatOpenId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from teamuser
+    where wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

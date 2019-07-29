@@ -1,0 +1,23 @@
+/* pages/projectTeam/projectTeam.wxss */
+.container{
+  width: 100%; 
+}
+
+.addTeam{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  background-color: #8D9FF1;
+}
+
+.showProjectTeam{
+  border :rebeccapurple 1px solid;
+  height: 30px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  border-radius: 15px;
+}

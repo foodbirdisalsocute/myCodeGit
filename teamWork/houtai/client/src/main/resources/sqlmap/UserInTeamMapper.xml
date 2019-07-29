@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxy.client.mapper.UserInTeamMapper">
+  <resultMap id="BaseResultMap" type="com.xxy.client.entity.UserInTeam">
+    <id column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <id column="wechat_open_id" jdbcType="VARCHAR" property="wechatOpenId" />
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="name_in_project" jdbcType="VARCHAR" property="nameInProject" />
+    <result column="deleted_status" jdbcType="VARCHAR" property="deletedStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    team_id, wechat_open_id, id, create_time, name_in_project, deleted_status
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.xxy.client.entity.UserInTeamKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user_in_team
+    where team_id = #{teamId,jdbcType=VARCHAR}
+      and wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.xxy.client.entity.UserInTeamKey">
+    delete from user_in_team
+    where team_id = #{teamId,jdbcType=VARCHAR}
+      and wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xxy.client.entity.UserInTeam">
+    insert into user_in_team (team_id, wechat_open_id, id, 
+      create_time, name_in_project, deleted_status
+      )
+    values (#{teamId,jdbcType=VARCHAR}, #{wechatOpenId,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{nameInProject,jdbcType=VARCHAR}, #{deletedStatus,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxy.client.entity.UserInTeam">
+    insert into user_in_team
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="teamId != null">
+        team_id,
+      </if>
+      <if test="wechatOpenId != null">
+        wechat_open_id,
+      </if>
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="nameInProject != null">
+        name_in_project,
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="teamId != null">
+        #{teamId,jdbcType=VARCHAR},
+      </if>
+      <if test="wechatOpenId != null">
+        #{wechatOpenId,jdbcType=VARCHAR},
+      </if>
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="nameInProject != null">
+        #{nameInProject,jdbcType=VARCHAR},
+      </if>
+      <if test="deletedStatus != null">
+        #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xxy.client.entity.UserInTeam">
+    update user_in_team
+    <set>
+      <if test="id != null">
+        id = #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="nameInProject != null">
+        name_in_project = #{nameInProject,jdbcType=VARCHAR},
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status = #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where team_id = #{teamId,jdbcType=VARCHAR}
+      and wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xxy.client.entity.UserInTeam">
+    update user_in_team
+    set id = #{id,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      name_in_project = #{nameInProject,jdbcType=VARCHAR},
+      deleted_status = #{deletedStatus,jdbcType=VARCHAR}
+    where team_id = #{teamId,jdbcType=VARCHAR}
+      and wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+  </update>
+
+
+  <!--自定义sql-->
+  <select id="getTeamListByWechatOpenId" parameterType="java.lang.String" resultType="java.lang.String">
+    select team_id
+    from  user_in_team
+    where wechat_open_id = #{wechatOpenId,jdbcType=VARCHAR}
+    and deleted_status="N"
+  </select>
+
+
+
+</mapper>

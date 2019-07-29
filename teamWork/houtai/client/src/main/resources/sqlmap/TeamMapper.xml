@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxy.client.mapper.TeamMapper">
+  <resultMap id="BaseResultMap" type="com.xxy.client.entity.Team">
+    <id column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="deleted_status" jdbcType="VARCHAR" property="deletedStatus" />
+    <result column="project_leader_openid" jdbcType="VARCHAR" property="projectLeaderOpenid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    team_name, team_id, create_date, deleted_status, project_leader_openid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from team
+    where team_name = #{teamName,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from team
+    where team_name = #{teamName,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xxy.client.entity.Team">
+    insert into team (team_name, team_id, create_date, 
+      deleted_status, project_leader_openid)
+    values (#{teamName,jdbcType=VARCHAR}, #{teamId,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{deletedStatus,jdbcType=VARCHAR}, #{projectLeaderOpenid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xxy.client.entity.Team">
+    insert into team
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="teamName != null">
+        team_name,
+      </if>
+      <if test="teamId != null">
+        team_id,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status,
+      </if>
+      <if test="projectLeaderOpenid != null">
+        project_leader_openid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="teamName != null">
+        #{teamName,jdbcType=VARCHAR},
+      </if>
+      <if test="teamId != null">
+        #{teamId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedStatus != null">
+        #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="projectLeaderOpenid != null">
+        #{projectLeaderOpenid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xxy.client.entity.Team">
+    update team
+    <set>
+      <if test="teamId != null">
+        team_id = #{teamId,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deletedStatus != null">
+        deleted_status = #{deletedStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="projectLeaderOpenid != null">
+        project_leader_openid = #{projectLeaderOpenid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where team_name = #{teamName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xxy.client.entity.Team">
+    update team
+    set team_id = #{teamId,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      deleted_status = #{deletedStatus,jdbcType=VARCHAR},
+      project_leader_openid = #{projectLeaderOpenid,jdbcType=VARCHAR}
+    where team_name = #{teamName,jdbcType=VARCHAR}
+  </update>
+</mapper>
